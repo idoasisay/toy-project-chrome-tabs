@@ -1,0 +1,87 @@
+body {
+  background-color: #ecf0f1;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+#wrapper {
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(50px);
+}
+
+.js-title {
+  font-size: 7em;
+  color: white;
+}
+
+.js-greetings {
+  font-size: 3em;
+  color: white;
+}
+input {
+  width: 500px;
+  height: 100px;
+  font-size: 3em;
+  background: none;
+  border: none;
+  border-bottom: 5px solid white;
+  color: white;
+  outline: 0;
+}
+
+input::placeholder {
+  color: white;
+}
+
+h1 {
+  color: #34495e;
+  transition: color .5s ease-in-out;
+}
+
+.othercolor {
+  color: #95a5a6;
+}
+
+.btn {
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: .7;
+  }
+}
+li {
+  font-size: 2em;
+  animation: fadeIn .2s linear;
+  list-style-type: none;
+}
+.bgImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn .5s linear;
+  opacity: .7;
+}
